@@ -4,10 +4,11 @@
 
 .posterImage > img {
   margin: auto;
+  display: block;
   width: 100%;
 }
 
-.posterImage_overlay {
+.posterImage__overlay {
   position: absolute;
   padding: 5rem;
   bottom: 0px;
@@ -17,31 +18,32 @@
   width: 100%;
   justify-content: flex-end;
   align-items: flex-start;
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 1));
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
   opacity: 1;
   transition: opacity 0.3s;
 }
 
-.posterImage_overlay:hover {
+.posterImage__overlay:hover {
   opacity: 1;
 }
-.posterImage_title {
+
+.posterImage__title {
   font-weight: 900;
   font-size: 4rem;
   margin-bottom: 0.4rem;
   text-align: left;
 }
 
-.posterImage_runtime {
+.posterImage__runtime {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.posterImage_rating {
+.posterImage__rating {
   margin-left: 3rem;
 }
 
-.posterImage_description {
+.posterImage__description {
   font-style: italic;
   font-size: 1rem;
   margin-bottom: 0.25rem;
